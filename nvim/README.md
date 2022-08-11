@@ -15,8 +15,6 @@ sudo pacman -S nodejs-lts-gallium yarn clang ctags fd ripgrep
 3. 安装配置
 ```bash
 rm -rf ~/.config/nvim
-git clone --depth 1 https://github.com/gl1n/nvim.git ~/.config/nvim
-cd ~/.config/nvim
 git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 nvim +PackerSync
 ```
