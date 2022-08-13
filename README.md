@@ -9,6 +9,7 @@
 sudo pacman -S zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k
 ```
 3. 创建软连接
+
 做好原有配置文件的备份，删除原有配置文件，然后执行命令
 ```bash
 ln -s "$PWD/zshrc" ~/.zshrc
