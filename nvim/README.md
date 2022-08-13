@@ -5,19 +5,19 @@
 - 使用coc管理lsp
 ## 使用方法
 1. 安装neovim
-```bash
-sudo pacman -S neovim
-```
+	```bash
+	sudo pacman -S neovim
+	```
 2. 安装依赖
-```bash
-sudo pacman -S nodejs-lts-gallium yarn clang ctags fd ripgrep
-```
+	```bash
+	sudo pacman -S nodejs-lts-gallium yarn clang ctags fd ripgrep
+	```
 3. 安装配置
-```bash
-rm -rf ~/.config/nvim
-git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-nvim +PackerSync
-```
+	```bash
+	rm -rf ~/.config/nvim
+	git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+	nvim +PackerSync
+	```
 4. 其他
 - 一些符号只有当终端中安装了[Nerd Font](https://www.nerdfonts.com/font-downloads)才会正常显示
 - 执行`nvim --startuptime <log file name>`可以查看nvim启动消耗的时间(ms)
