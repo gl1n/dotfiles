@@ -42,6 +42,11 @@ alias e='nvim'
 alias c='clear'
 
 alias h='history'
+alias ha='history 1'
+alias hg='history 1 | grep'
+
+#环境变量
+export VISUAL=nvim
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
