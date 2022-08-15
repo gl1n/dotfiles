@@ -1,7 +1,0 @@
-{
-  "diagnostic.virtualText": false,
-  "diagnostic.checkCurrentLine": true,
-  "coc.preferences.formatOnSaveFiletypes": [
-    "cpp", "c"
-  ]
-}
