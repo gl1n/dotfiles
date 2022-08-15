@@ -6,3 +6,6 @@ require('conf.lualine')
 require('conf.bufferline')
 require('conf.comment')
 require('conf.floaterm')
+require('conf.mason')
+require("conf.nvim-lsp")
+require('conf.nvim-cmp') --nvim-lsp要先于nvim-cmp加载，否则会出问题

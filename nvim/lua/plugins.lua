@@ -23,7 +23,7 @@ return require('packer').startup(function()
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
-  use {'neoclide/coc.nvim', branch='release'}
+  -- use {'neoclide/coc.nvim', branch='release'}
 
   use 'preservim/tagbar'
 
@@ -51,5 +51,16 @@ return require('packer').startup(function()
     "windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
   }
+  
+  use {"neovim/nvim-lspconfig"}
+  use { "williamboman/mason.nvim" }
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
+  use "rafamadriz/friendly-snippets"
 
 end)
