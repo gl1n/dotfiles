@@ -2,9 +2,9 @@
 local cmp = require'cmp'
 local luasnip = require('luasnip') 
 
-vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
+require('luasnip.loaders.from_vscode').lazy_load()
 
--- require('luasnip.loaders.from_vscode').lazy_load()
+vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
 
 cmp.setup({
   -- 引入snip引擎
@@ -24,7 +24,7 @@ cmp.setup({
     ['<C-e>'] = cmp.mapping.abort(), --退出补全
     ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
     -- 下一个placeholder
-    ['<C-d>'] = cmp.mapping(function(fallback)
+    ['<C-j>'] = cmp.mapping(function(fallback)
       if luasnip.jumpable(1) then
         luasnip.jump(1)
       else
@@ -32,7 +32,7 @@ cmp.setup({
       end
     end, {'i', 's'}),
     -- 上一个placeholder
-    ['<C-b>'] = cmp.mapping(function(fallback)
+    ['<C-k>'] = cmp.mapping(function(fallback)
       if luasnip.jumpable(-1) then
         luasnip.jump(-1)
       else

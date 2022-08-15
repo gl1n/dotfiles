@@ -60,3 +60,10 @@ keymap('n', '<leader>fh', '<cmd>Telescope help_tags<cr>', nore)
 -- F4 键进入/退出terminal模式
 keymap('t', '<F4>', '<C-\\><C-n>:FloatermToggle<cr>', nore)
 keymap('n', '<F4>', ':FloatermToggle<cr>', nore)
+
+-- local ls = require("luasnip")
+-- vim.keymap.set({"i", "s"}, "<c-k>", function()
+--   if ls.expand_or_jumpable() then
+--     ls.expand_or_jump()
+--   end
+-- end, {silent = true})
