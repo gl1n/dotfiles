@@ -118,3 +118,4 @@ vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(
 ---
 
 lspconfig.clangd.setup({})
+lspconfig.pyright.setup({})
