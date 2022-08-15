@@ -47,6 +47,7 @@ alias hg='history 1 | grep'
 
 #环境变量
 export VISUAL=nvim
+export LC_ALL="en_US.UTF-8" # For ranger
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

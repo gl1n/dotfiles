@@ -14,9 +14,11 @@
 	```bash
 	ln -s "$PWD/zshrc" ~/.zshrc
 	ln -s "$PWD/nvim" ~/.config/nvim
+  ln -s "$PWD/rc.conf" ~/.config/ranger/rc.conf
 	```
 ## 删除软连接
 	```
 	rm ~/.zshrc
 	rm ~/.config/nvim
+  rm ~/.config/ranger/rc.conf
 	```
