@@ -52,15 +52,15 @@ return require('packer').startup(function()
     config = function() require("nvim-autopairs").setup {} end
   }
   
-  use {"neovim/nvim-lspconfig"}
-  use { "williamboman/mason.nvim" }
+  use 'neovim/nvim-lspconfig'
+  use 'williamboman/mason.nvim'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp'
   use 'L3MON4D3/LuaSnip'
-  use "rafamadriz/friendly-snippets"
+  use 'rafamadriz/friendly-snippets'
   use 'saadparwaiz1/cmp_luasnip'
 
 end)
