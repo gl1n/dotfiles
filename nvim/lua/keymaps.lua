@@ -15,13 +15,9 @@ keymap('i', '<C-s>', '<cmd>w<cr>', nore)
 keymap('n', '<C-s>', '<cmd>w<cr>', nore)
 
 
--- Windows management
--- C-w + v to open a windows vertically
--- C-w + s to open a windows horizontally
-
 --close current windows
 keymap('n', '<C-c>', '<C-w>c',nore)
--- resize
+-- resize windows
 keymap('n', '<C-Right>', '<cmd>vertical resize +1<cr>', nore)
 keymap('n', '<C-Left>', '<cmd>vertical resize -1<cr>', nore)
 keymap('n', '<C-Up>', '<cmd>resize +1<cr>', nore)
@@ -61,9 +57,5 @@ keymap('n', '<leader>fh', '<cmd>Telescope help_tags<cr>', nore)
 keymap('t', '<F4>', '<C-\\><C-n>:FloatermToggle<cr>', nore)
 keymap('n', '<F4>', ':FloatermToggle<cr>', nore)
 
--- local ls = require("luasnip")
--- vim.keymap.set({"i", "s"}, "<c-k>", function()
---   if ls.expand_or_jumpable() then
---     ls.expand_or_jump()
---   end
--- end, {silent = true})
+-- formatting with nvim-lsp
+keymap('n', '<leader>fm', '<cmd>lua vim.lsp.buf.formatting()<CR>', nore)
