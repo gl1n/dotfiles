@@ -116,3 +116,4 @@ vim.diagnostic.config({
 
 lspconfig.clangd.setup({})
 lspconfig.pyright.setup({})
+lspconfig.sumneko_lua.setup({})
