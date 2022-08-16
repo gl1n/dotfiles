@@ -28,15 +28,15 @@ keymap('n', '<C-Up>', '<cmd>resize +1<cr>', nore)
 keymap('n', '<C-Down>', '<cmd>resize -1<cr>', nore)
 
 -- navigation
-keymap('n', '<Right>', '<C-w>l', nore)
-keymap('n', '<Left>', '<C-w>h', nore)
-keymap('n', '<Up>', '<C-w>k', nore)
-keymap('n', '<Down>', '<C-w>j', nore)
+keymap('n', '<C-l>', '<C-w>l', nore)
+keymap('n', '<C-h>', '<C-w>h', nore)
+keymap('n', '<C-k>', '<C-w>k', nore)
+keymap('n', '<C-j>', '<C-w>j', nore)
 
 -- deal with buffers
 keymap('n', '<A-j>', '<cmd>bp<cr>', nore)
 keymap('n', '<A-k>', '<cmd>bn<cr>', nore)
-keymap('n', '<C-x>', '<cmd>bd %<cr>', nore)
+keymap('n', '<A-x>', '<cmd>bd %<cr>', nore)
 
 
 -- For nvim-tree
