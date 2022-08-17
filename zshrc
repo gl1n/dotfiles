@@ -45,6 +45,8 @@ alias h='history'
 alias ha='history 1'
 alias hg='history 1 | grep'
 
+alias rg='ranger'
+
 #环境变量
 export VISUAL=nvim
 export LC_ALL="en_US.UTF-8" # For ranger
