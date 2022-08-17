@@ -10,7 +10,7 @@
 	```
 2. 安装依赖
 	```bash
-	sudo pacman -S nodejs-lts-gallium yarn clang ctags fd ripgrep
+	sudo pacman -S nodejs-lts-gallium yarn ctags fd ripgrep
 	```
 3. 安装配置
 	```bash
