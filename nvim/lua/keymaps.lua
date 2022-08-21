@@ -40,8 +40,7 @@ keymap('n', '<F5>', '<cmd>NvimTreeToggle<cr>', nore)
 
 
 -- For tagbar
--- nmap <F6> :TagbarToggle<CR>
-keymap('n', '<F6>', ':TagbarToggle<CR>', nore)
+keymap('n', '<F6>', ':SymbolsOutline<CR>', nore)
 
 
 -- For telescope
