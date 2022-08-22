@@ -2,7 +2,7 @@
 自用nvim配置
 - 使用lua进行配置
 - 使用packer进行插件管理
-- 使用coc管理lsp
+- 使用nvim-lspconfig管理lsp
 ## 使用方法
 1. 安装neovim
 	```bash
@@ -10,7 +10,7 @@
 	```
 2. 安装依赖
 	```bash
-	sudo pacman -S nodejs-lts-gallium yarn ctags fd ripgrep
+	sudo pacman -S nodejs-lts-gallium yarn fd ripgrep
 	```
 3. 安装配置
 	```bash
