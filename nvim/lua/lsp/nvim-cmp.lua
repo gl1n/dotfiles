@@ -1,6 +1,7 @@
 vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
 
 require('luasnip.loaders.from_vscode').lazy_load({"cpp"}) -- 这里需要指明要加载cpp的snippets，否则cpp的不会被加载。其他语言不指明也会被加载
+require('luasnip.loaders.from_vscode').lazy_load({paths = {"~/.config/nvim/my-snippets"}}) -- 指明自定义snippets的路径
 
 local cmp = require('cmp')
 local luasnip = require('luasnip')

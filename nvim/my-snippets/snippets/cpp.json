@@ -1,0 +1,11 @@
+{
+  "multi-line comment": {
+    "prefix": "cm",
+    "body": [
+      "/*",
+      " * $0",
+      " */"
+    ],
+    "description": "Code snippet for multiple lines comment"
+  }
+}
