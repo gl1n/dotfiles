@@ -7,5 +7,41 @@
       " */"
     ],
     "description": "Code snippet for multiple lines comment"
+  },
+  "leetcode template": {
+    "prefix": "lc",
+    "body": [
+      "#include <algorithm>",
+      "#include <string>",
+      "#include <array>",
+      "#include <vector>",
+      "#include <list>",
+      "#include <forward_list>",
+      "#include <deque>",
+      "#include <queue>",
+      "#include <map>",
+      "#include <set>",
+      "#include <unordered_map>",
+      "#include <unordered_set>",
+      "#include <iostream>",
+      "using namespace std;",
+
+      "\n",
+      "class Solution {",
+      "public:",
+      "\t${1:void} ${2:func}(${3:int params}) {",
+      "\t\t$4",
+      "\t}",
+      "};",
+
+      "\n",
+      "int main (int argc, char *argv[])",
+      "{",
+      "\t$5",
+      "\treturn 0;",
+      "}"
+    ],
+    "description": "Code snippet for leetcode solution"
   }
+
 }
