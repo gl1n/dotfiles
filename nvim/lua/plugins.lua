@@ -5,9 +5,9 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
   -- Packer can manage itself
-  use {'wbthomason/packer.nvim', opt=true}
+  use { 'wbthomason/packer.nvim', opt = true }
 
-  use {'kyazdani42/nvim-web-devicons', opt = true}
+  use { 'kyazdani42/nvim-web-devicons', opt = true }
 
   use {
     'nvim-lualine/lualine.nvim',
@@ -15,8 +15,9 @@ return require('packer').startup(function()
   }
 
   use {
-    'akinsho/bufferline.nvim', tag = "v2.*", 
-    requires = 'kyazdani42/nvim-web-devicons'}
+    'akinsho/bufferline.nvim', tag = "v2.*",
+    requires = 'kyazdani42/nvim-web-devicons'
+  }
 
   use {
     'kyazdani42/nvim-tree.lua',
@@ -32,18 +33,18 @@ return require('packer').startup(function()
 
   use 'voldikss/vim-floaterm'
 
-  use {'folke/tokyonight.nvim', branch='main'}
+  use { 'folke/tokyonight.nvim', branch = 'main' }
 
   use 'mhinz/vim-startify'
 
---  use {'fatih/vim-go', run = ':GoUpdateBinaries' }
+  --  use {'fatih/vim-go', run = ':GoUpdateBinaries' }
 
-  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
   use {
     'numToStr/Comment.nvim',
     config = function()
-        require('Comment').setup()
+      require('Comment').setup()
     end
   }
 
@@ -51,10 +52,13 @@ return require('packer').startup(function()
     "windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
   }
-  
-  use 'neovim/nvim-lspconfig'
 
-  use 'williamboman/mason.nvim'
+  use {
+    "williamboman/mason-lspconfig.nvim",
+    'williamboman/mason.nvim',
+    'neovim/nvim-lspconfig'
+  }
+
 
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'

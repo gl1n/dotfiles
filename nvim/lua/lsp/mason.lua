@@ -7,3 +7,6 @@ require("mason").setup({
         }
     }
 })
+require("mason-lspconfig").setup({
+  ensure_installed = { "clangd", "cmake-language-server", "pyright", "lua-language-server" }
+})
