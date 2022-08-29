@@ -1,12 +1,12 @@
-# linux-config
+# Linux dotfiles 
 保存linux自用配置文件
 ## 如何使用
 1. 安装好zsh nvim
 2. 拉取本项目
-	`git clone https://github.com/gl1n/linux-config.git`
+	`git clone https://github.com/gl1n/dotfiles.git`
 3. 安装zsh插件
 	```
-	sudo pacman -S zsh-autosuggestions zsh-syntax-highlighting zsh-theme-	powerlevel10k
+	sudo pacman -S zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k
 	```
 4. 创建软连接
 
