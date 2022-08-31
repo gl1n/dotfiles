@@ -13,12 +13,14 @@
 	做好原有配置文件的备份，删除原有配置文件，然后执行命令
 	```bash
 	ln -s "$PWD/zshrc" ~/.zshrc
+  ls -s "$PWD/p10k.zsh" ~/.p10k.zsh
 	ln -s "$PWD/nvim" ~/.config/nvim
   	ln -s "$PWD/rc.conf" ~/.config/ranger/rc.conf
 	```
 ## 删除软连接
 	```
 	rm ~/.zshrc
+  rm ~/.p10k.zsh
 	rm ~/.config/nvim
   	rm ~/.config/ranger/rc.conf
 	```
