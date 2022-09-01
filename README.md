@@ -4,7 +4,7 @@
 
 ## 如何使用
 
-1. 安装好zsh nvim
+1. 安装好zsh nvim tmux ranger
 
 2. 拉取本项目
     `git clone https://github.com/gl1n/dotfiles.git`
@@ -23,6 +23,7 @@
    ln -s "$PWD/zshrc" ~/.zshrc
    ln -s "$PWD/p10k.zsh" ~/.p10k.zsh
    ln -s "$PWD/nvim" ~/.config/nvim
+   ln -s "$PWD/tmux.conf" ~/.tmux.conf
    ln -s "$PWD/rc.conf" ~/.config/ranger/rc.conf
    ```
    
@@ -32,5 +33,6 @@
    rm ~/.zshrc
    rm ~/.p10k.zsh
    rm ~/.config/nvim
+   rm ~/.tmux.conf
    rm ~/.config/ranger/rc.conf
    ```
