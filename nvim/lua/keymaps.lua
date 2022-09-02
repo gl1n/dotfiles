@@ -30,8 +30,8 @@ keymap('n', '<C-k>', '<C-w>k', nore)
 keymap('n', '<C-j>', '<C-w>j', nore)
 
 -- deal with buffers
-keymap('n', '<A-j>', '<cmd>bp<cr>', nore)
-keymap('n', '<A-k>', '<cmd>bn<cr>', nore)
+keymap('n', '<A-h>', '<cmd>bp<cr>', nore)
+keymap('n', '<A-l>', '<cmd>bn<cr>', nore)
 keymap('n', '<A-x>', '<cmd>bd %<cr>', nore)
 
 
