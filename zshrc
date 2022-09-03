@@ -45,6 +45,10 @@ alias h='history'
 alias ha='history 1'
 alias hg='history 1 | grep'
 
+alias ta='tmux attach -t'
+alias tl='tmux ls'
+alias tn='tmux new -s'
+
 #环境变量
 export VISUAL=nvim
 export LC_ALL="en_US.UTF-8" # For ranger
