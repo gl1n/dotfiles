@@ -8,6 +8,13 @@
     ],
     "description": "Code snippet for multiple lines comment"
   },
+  "note comment": {
+    "prefix": "note",
+    "body": [
+      "/* Reading Note: $0 */"
+    ],
+    "description": "Code snippet for source code reading notes"
+  },
   "leetcode template": {
     "prefix": "lc",
     "body": [
