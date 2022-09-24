@@ -24,6 +24,7 @@
    ln -s "$PWD/p10k.zsh" ~/.p10k.zsh
    ln -s "$PWD/nvim" ~/.config/nvim
    ln -s "$PWD/tmux.conf" ~/.tmux.conf
+   ln -s "$PWD/gdbinit" ~/.gdbinit
    ln -s "$PWD/rc.conf" ~/.config/ranger/rc.conf
    ```
    
@@ -34,5 +35,6 @@
    rm ~/.p10k.zsh
    rm ~/.config/nvim
    rm ~/.tmux.conf
+   rm ~/.gdbinit
    rm ~/.config/ranger/rc.conf
    ```
