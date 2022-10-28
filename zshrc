@@ -49,6 +49,10 @@ alias ta='tmux attach -t'
 alias tl='tmux ls'
 alias tn='tmux new -s'
 
+alias ga='git add'
+alias gc='git commit -m'
+alias gs='git status'
+
 #环境变量
 export VISUAL=nvim
 export LC_ALL="en_US.UTF-8" # For ranger
