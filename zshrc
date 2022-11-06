@@ -37,8 +37,6 @@ alias l.='ls -d .*'
 
 alias pc='proxychains -q'
 
-alias e='nvim'
-
 alias c='clear'
 
 alias h='history'
@@ -54,7 +52,7 @@ alias gc='git commit -m'
 alias gs='git status'
 
 #环境变量
-export VISUAL=nvim
+export EDITOR=vim
 export LC_ALL="en_US.UTF-8" # For ranger
 export PATH="/home/lu/.local/bin/:$PATH"
 
