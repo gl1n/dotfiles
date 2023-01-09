@@ -22,19 +22,9 @@
    ```bash
    ln -s "$PWD/zshrc" ~/.zshrc
    ln -s "$PWD/p10k.zsh" ~/.p10k.zsh
+   ln -s "$PWD/vimrc" ~/.vimrc
    ln -s "$PWD/nvim" ~/.config/nvim
    ln -s "$PWD/tmux.conf" ~/.tmux.conf
    ln -s "$PWD/gdbinit" ~/.gdbinit
    ln -s "$PWD/rc.conf" ~/.config/ranger/rc.conf
-   ```
-   
-   ## 删除软连接
-   
-   ```bash
-   rm ~/.zshrc
-   rm ~/.p10k.zsh
-   rm ~/.config/nvim
-   rm ~/.tmux.conf
-   rm ~/.gdbinit
-   rm ~/.config/ranger/rc.conf
    ```
