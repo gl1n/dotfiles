@@ -15,21 +15,9 @@ return require('packer').startup(function()
   }
 
   use {
-    'akinsho/bufferline.nvim', tag = "v2.*",
-    requires = 'kyazdani42/nvim-web-devicons'
+    'nvim-telescope/telescope.nvim',
+    requires = { 'nvim-lua/plenary.nvim' }
   }
-
-  use {
-    'kyazdani42/nvim-tree.lua',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-  }
-
-  -- use {'neoclide/coc.nvim', branch='release'}
-
-  -- use 'preservim/tagbar'
-
-  use 'nvim-lua/plenary.nvim'
-  use 'nvim-telescope/telescope.nvim'
 
   use 'voldikss/vim-floaterm'
 
@@ -59,21 +47,22 @@ return require('packer').startup(function()
     'neovim/nvim-lspconfig'
   }
 
+  use {
+    'ray-x/lsp_signature.nvim'
+  }
 
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-path'
-  use 'hrsh7th/cmp-cmdline'
-  use 'hrsh7th/nvim-cmp'
+  use {
+    'simrat39/symbols-outline.nvim'
+  }
 
-  use 'L3MON4D3/LuaSnip'
-  use 'rafamadriz/friendly-snippets'
-
-  use 'saadparwaiz1/cmp_luasnip'
-
-  use 'ray-x/lsp_signature.nvim'
-
-  use 'simrat39/symbols-outline.nvim'
-
+  use {
+    'nvim-tree/nvim-tree.lua',
+    require = {
+      'nvim-tree/nvim-web-devicons',
+    },
+    config = function()
+      require('nvim-tree').setup()
+    end
+  }
 
 end)

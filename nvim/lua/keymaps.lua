@@ -29,32 +29,18 @@ keymap('n', '<C-h>', '<C-w>h', nore)
 keymap('n', '<C-k>', '<C-w>k', nore)
 keymap('n', '<C-j>', '<C-w>j', nore)
 
--- deal with buffers
-keymap('n', '<A-h>', '<cmd>bp<cr>', nore)
-keymap('n', '<A-l>', '<cmd>bn<cr>', nore)
-keymap('n', '<A-x>', '<cmd>bd %<cr>', nore)
-
-
--- For nvim-tree
-keymap('n', '<F5>', '<cmd>NvimTreeToggle<cr>', nore)
-
-
--- For tagbar
-keymap('n', '<F6>', ':SymbolsOutline<CR>', nore)
-
 
 -- For telescope
--- Find files using Telescope command-line sugar.
 keymap('n', '<leader>ff', '<cmd>Telescope find_files<cr>', nore)
 keymap('n', '<leader>fg', '<cmd>Telescope live_grep<cr>', nore)
 keymap('n', '<leader>fb', '<cmd>Telescope buffers<cr>', nore)
 keymap('n', '<leader>fh', '<cmd>Telescope help_tags<cr>', nore)
 
+-- For nvim-tree
+keymap('n', '<leader>ll', ':NvimTreeToggle<CR>', nore)
+keymap('n', '<leader>lf', ':NvimTreeFindFile<CR>', nore)
+keymap('n', '<leader>lc', ':NvimTreeCollapse<CR>', nore)
 
--- For Floaterm
--- F4 键进入/退出terminal模式
-keymap('t', '<F4>', '<C-\\><C-n>:FloatermToggle<cr>', nore)
-keymap('n', '<F4>', ':FloatermToggle<cr>', nore)
 
--- formatting with nvim-lsp
-keymap('n', '<leader>fm', '<cmd>lua vim.lsp.buf.formatting()<CR>', nore)
+-- Formatting
+keymap('n', '<leader>fm', '<cmd>lua vim.lsp.buf.format()<CR>', nore)
