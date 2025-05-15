@@ -12,7 +12,7 @@
 3. 安装zsh插件
    
    ```
-   sudo pacman -S zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k
+   sh install.sh
    ```
 
 4. 创建软连接
@@ -21,10 +21,8 @@
    
    ```bash
    ln -s "$PWD/zshrc" ~/.zshrc
-   ln -s "$PWD/p10k.zsh" ~/.p10k.zsh
    ln -s "$PWD/vimrc" ~/.vimrc
    ln -s "$PWD/nvim" ~/.config/nvim
    ln -s "$PWD/tmux.conf" ~/.tmux.conf
    ln -s "$PWD/gdbinit" ~/.gdbinit
-   ln -s "$PWD/rc.conf" ~/.config/ranger/rc.conf
    ```
