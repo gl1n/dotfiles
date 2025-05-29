@@ -19,11 +19,13 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+PLUGIN_DIR="$HOME/.zsh/plugins"
 
 # 第三方插件
-source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
+source $PLUGIN_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $PLUGIN_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $PLUGIN_DIR/powerlevel10k/powerlevel10k.zsh-theme
+source $PLUGIN_DIR/z/z.sh
 
 bindkey ',' autosuggest-accept
 
