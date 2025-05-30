@@ -1,0 +1,51 @@
+{
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",  // 可能需要重启才能检测到
+    "editor.fontSize": 15, //设置字体大小
+    "editor.tabSize": 2, //设置tab的长度
+    /* vim 配置 */
+    "vim.easymotion": true, //按<leader><leader>进入easymotion模式，然后按任意移动键来显示跳转目标
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true, //让vim模拟器占用ctrl键
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [ //键位映射
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "d",
+                "d"
+            ]
+        }
+    ],
+    "vim.leader": "<space>",
+    // 让vscode保有这些快捷键
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-s>": false,
+        "<C-x>": false,
+        "<C-c>": false,
+        "<C-v>": false,
+        "<C-d>": false,
+        "<C-p>": false,
+    },
+    "git.blame.editorDecoration.enabled": true,
+    "clangd.arguments": [
+        "--header-insertion=never"
+    ],
+    "workbench.colorTheme": "Tokyo Night",
+}
