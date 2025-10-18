@@ -5,29 +5,48 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1500
-setopt autocd beep extendedglob nomatch notify
-bindkey -e
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-zstyle :compinstall filename '/home/lu/.zshrc'
+#环境变量
+export EDITOR=vim
 
 autoload -Uz compinit
 compinit
-# End of lines added by compinstall
 
+# 插件目录
 PLUGIN_DIR="$HOME/.zsh/plugins"
-
-# 第三方插件
+mkdir -p "$PLUGIN_DIR"
+# 插件列表：格式为 "目录名 git地址 [额外参数]"
+PLUGINS="
+zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions --depth=1
+zsh-syntax-highlighting https://github.com/zsh-users/zsh-syntax-highlighting --depth=1
+powerlevel10k https://github.com/romkatv/powerlevel10k.git --depth=1
+z https://github.com/rupa/z.git --depth=1
+"
+# 检查并安装插件
+echo "$PLUGINS" | while read -r name repo extra; do
+  [ -z "$name" ] && continue
+  dir="$PLUGIN_DIR/$name"
+  if [ ! -d "$dir" ]; then
+    echo "正在安装 $name ..."
+    git clone $extra "$repo" "$dir"
+  else
+    # echo "$dir 已存在，跳过"
+    :
+  fi
+done
+# 加载插件
 source $PLUGIN_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $PLUGIN_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $PLUGIN_DIR/powerlevel10k/powerlevel10k.zsh-theme
 source $PLUGIN_DIR/z/z.sh
-
+# 插件快捷键
 bindkey ',' autosuggest-accept
+
+#history相关
+HISTFILE=~/.zsh_history
+HISTSIZE=1000
+SAVEHIST=1000
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
 
 #命令别名
 alias grep='grep --color'
@@ -45,18 +64,14 @@ alias h='history'
 alias ha='history 1'
 alias hg='history 1 | grep'
 
-alias ta='tmux attach -t'
-alias tl='tmux ls'
-alias tn='tmux new -s'
-
 alias ga='git add'
 alias gc='git commit -m'
 alias gs='git status'
 
-#环境变量
-export EDITOR=vim
-export LC_ALL="en_US.UTF-8" # For ranger
-export PATH="/home/lu/.local/bin/:$PATH"
+alias rgcc='rg --g="*.cpp"'
+alias rgh='rg --g="*.h"'
+alias rgpb='rg --g="*.proto"'
+alias rggo='rg --g="*.go"'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
