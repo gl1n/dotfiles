@@ -19,7 +19,7 @@ PLUGINS="
 zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions --depth=1
 zsh-syntax-highlighting https://github.com/zsh-users/zsh-syntax-highlighting --depth=1
 powerlevel10k https://github.com/romkatv/powerlevel10k.git --depth=1
-z https://github.com/rupa/z.git --depth=1
+zsh-z https://github.com/agkozak/zsh-z --depth=1
 "
 # 检查并安装插件
 echo "$PLUGINS" | while read -r name repo extra; do
@@ -37,7 +37,7 @@ done
 source $PLUGIN_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $PLUGIN_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $PLUGIN_DIR/powerlevel10k/powerlevel10k.zsh-theme
-source $PLUGIN_DIR/z/z.sh
+source $PLUGIN_DIR/zsh-z/zsh-z.plugin.zsh
 # 插件快捷键
 bindkey ',' autosuggest-accept
 
@@ -47,6 +47,9 @@ HISTSIZE=1000
 SAVEHIST=1000
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
+
+#zsh-z相关
+ZSHZ_CASE=ignore
 
 #命令别名
 alias grep='grep --color'
